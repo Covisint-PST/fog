@@ -14,7 +14,7 @@ module Fog
         def put_bucket_website(bucket_name, suffix, options = {})
           data =
 <<-DATA
-<WebsiteConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+<WebsiteConfiguration xmlns="http://s3.amazonaws.com.cn/doc/2006-03-01/">
     <IndexDocument>
         <Suffix>#{suffix}</Suffix>
     </IndexDocument>

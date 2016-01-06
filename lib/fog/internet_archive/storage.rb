@@ -129,7 +129,7 @@ module Fog
                 },
                 {
                   "Permission" => "READ",
-                  "Grantee" => {"URI" => "http://acs.amazonaws.com/groups/global/AllUsers"}
+                  "Grantee" => {"URI" => "http://acs.amazonaws.com.cn/groups/global/AllUsers"}
                 }
               ],
               "Owner" => {"DisplayName" => "me", "ID" => "2744ccd10c7533bd736ad890f9dd5cab2adb27b07d500b9493f29cdc420cb2e0"}
@@ -143,11 +143,11 @@ module Fog
                 },
                 {
                   "Permission" => "READ",
-                  "Grantee" => {"URI" => "http://acs.amazonaws.com/groups/global/AllUsers"}
+                  "Grantee" => {"URI" => "http://acs.amazonaws.com.cn/groups/global/AllUsers"}
                 },
                 {
                   "Permission" => "WRITE",
-                  "Grantee" => {"URI" => "http://acs.amazonaws.com/groups/global/AllUsers"}
+                  "Grantee" => {"URI" => "http://acs.amazonaws.com.cn/groups/global/AllUsers"}
                 }
               ],
               "Owner" => {"DisplayName" => "me", "ID" => "2744ccd10c7533bd736ad890f9dd5cab2adb27b07d500b9493f29cdc420cb2e0"}
@@ -161,7 +161,7 @@ module Fog
                 },
                 {
                   "Permission" => "READ",
-                  "Grantee" => {"URI" => "http://acs.amazonaws.com/groups/global/AuthenticatedUsers"}
+                  "Grantee" => {"URI" => "http://acs.amazonaws.com.cn/groups/global/AuthenticatedUsers"}
                 }
               ],
               "Owner" => {"DisplayName" => "me", "ID" => "2744ccd10c7533bd736ad890f9dd5cab2adb27b07d500b9493f29cdc420cb2e0"}

@@ -173,7 +173,7 @@ Shindo.tests('Fog::Storage[:internetarchive] | bucket requests', ["internetarchi
       'Owner' => @aws_owner,
       'AccessControlList' => [
         {
-          'Grantee' => { 'URI' => 'http://acs.amazonaws.com/groups/global/AllUsers' },
+          'Grantee' => { 'URI' => 'http://acs.amazonaws.com.cn/groups/global/AllUsers' },
           'Permission' => "FULL_CONTROL"
         }
       ]

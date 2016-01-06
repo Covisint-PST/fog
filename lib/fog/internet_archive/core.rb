@@ -121,7 +121,7 @@ module Fog
       end
 
       def self.dns_name_for(ip_address)
-        "ec2-#{ip_address.gsub('.','-')}.compute-1.amazonaws.com"
+        "ec2-#{ip_address.gsub('.','-')}.compute-1.amazonaws.com.cn"
       end
 
       def self.private_dns_name_for(ip_address)
@@ -262,7 +262,7 @@ module Fog
       end
 
       def self.rds_address(db_name,region)
-        "#{db_name}.#{Fog::Mock.random_letters(rand(12) + 4)}.#{region}.rds.amazonaws.com"
+        "#{db_name}.#{Fog::Mock.random_letters(rand(12) + 4)}.#{region}.rds.amazonaws.com.cn"
       end
     end
 

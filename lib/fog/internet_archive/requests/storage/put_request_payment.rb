@@ -12,7 +12,7 @@ module Fog
         def put_request_payment(bucket_name, payer)
           data =
 <<-DATA
-<RequestPaymentConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+<RequestPaymentConfiguration xmlns="http://s3.amazonaws.com.cn/doc/2006-03-01/">
   <Payer>#{payer}</Payer>
 </RequestPaymentConfiguration>
 DATA

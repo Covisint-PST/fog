@@ -104,7 +104,7 @@ Shindo.tests('Fog::Storage::InternetArchive | ACL utils', ["internetarchive"]) d
       'AccessControlList' => [
         {
           'Grantee' => {
-            'URI' => 'http://acs.amazonaws.com/groups/global/AllUsers'
+            'URI' => 'http://acs.amazonaws.com.cn/groups/global/AllUsers'
           },
           'Permission' => 'WRITE'
         }
@@ -116,7 +116,7 @@ Shindo.tests('Fog::Storage::InternetArchive | ACL utils', ["internetarchive"]) d
       Nokogiri::XML(xml).xpath("//AccessControlPolicy/AccessControlList/Grant/Grantee").first.attributes["type"].value
     end
 
-    tests(".hash_to_acl(#{acl.inspect}) at xpath //AccessControlPolicy/AccessControlList/Grant/Grantee/URI").returns("http://acs.amazonaws.com/groups/global/AllUsers", "returns the Grantee URI") do
+    tests(".hash_to_acl(#{acl.inspect}) at xpath //AccessControlPolicy/AccessControlList/Grant/Grantee/URI").returns("http://acs.amazonaws.com.cn/groups/global/AllUsers", "returns the Grantee URI") do
       xml = Fog::Storage::InternetArchive.hash_to_acl(acl)
       Nokogiri::XML(xml).xpath("//AccessControlPolicy/AccessControlList/Grant/Grantee/URI").first.content
     end
@@ -143,7 +143,7 @@ Shindo.tests('Fog::Storage::InternetArchive | ACL utils', ["internetarchive"]) d
         },
         {
           'Grantee' => {
-            'URI' => 'http://acs.amazonaws.com/groups/global/AllUsers'
+            'URI' => 'http://acs.amazonaws.com.cn/groups/global/AllUsers'
           },
           'Permission' => 'WRITE'
         }
@@ -165,7 +165,7 @@ Shindo.tests('Fog::Storage::InternetArchive | ACL utils', ["internetarchive"]) d
       Nokogiri::XML(xml).xpath("//AccessControlPolicy/AccessControlList/Grant/Grantee/EmailAddress").first.content
     end
 
-    tests(".hash_to_acl(#{acl.inspect}) at xpath //AccessControlPolicy/AccessControlList/Grant/Grantee/URI").returns("http://acs.amazonaws.com/groups/global/AllUsers", "returns the third Grant's Grantee URI") do
+    tests(".hash_to_acl(#{acl.inspect}) at xpath //AccessControlPolicy/AccessControlList/Grant/Grantee/URI").returns("http://acs.amazonaws.com.cn/groups/global/AllUsers", "returns the third Grant's Grantee URI") do
       xml = Fog::Storage::InternetArchive.hash_to_acl(acl)
       Nokogiri::XML(xml).xpath("//AccessControlPolicy/AccessControlList/Grant/Grantee/URI").first.content
     end

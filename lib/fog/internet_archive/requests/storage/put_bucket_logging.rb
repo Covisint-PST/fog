@@ -25,12 +25,12 @@ module Fog
           if logging_status['LoggingEnabled'].empty?
             data =
 <<-DATA
-<BucketLoggingStatus xmlns="http://doc.s3.amazonaws.com/2006-03-01" />
+<BucketLoggingStatus xmlns="http://doc.s3.amazonaws.com.cn/2006-03-01" />
 DATA
           else
             data =
 <<-DATA
-<BucketLoggingStatus xmlns="http://doc.s3.amazonaws.com/2006-03-01">
+<BucketLoggingStatus xmlns="http://doc.s3.amazonaws.com.cn/2006-03-01">
   <LoggingEnabled>
     <TargetBucket>#{logging_status['LoggingEnabled']['TargetBucket']}</TargetBucket>
     <TargetPrefix>#{logging_status['LoggingEnabled']['TargetBucket']}</TargetPrefix>
